@@ -1,0 +1,27 @@
+
+
+.logo {
+	margin-top: 40vh;
+	height: 10vh;
+}
+
+/*html, body, #map-canvas { height: 100%; margin: 0; padding: 50px;}*/
+
+.map-container {
+	padding: 25px 50px;
+}
+
+
+.black {
+	background-color: #777777;
+}
+
+
+.title-logo {
+	margin-top:4vh;
+	width:15vw;
+}
+
+.no-padding {
+	padding: 0;
+}

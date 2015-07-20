@@ -5,44 +5,28 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<style type="text/css">
-	html, body, .map-container, #map-canvas { height: 100%; margin: 0; padding: 0;}
-	.map-container {padding:0vh 5vw; }
-	</style>
-	<link rel="stylesheet" href="../css/styles.css">
+
+	<link rel="stylesheet" href="../css/map_styles.css">
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXpGSodEXlo00SBlmiV1oowYqWIugZqZM">
 	</script>
-	<script type="text/javascript">
-	var map;
-	function initialize() {
-		var mapOptions = {
-			center: { lat: 20, lng: 0},
-			zoom: 2
-		};
-		var map = new google.maps.Map(document.getElementById('map-canvas'),
-			mapOptions);
-	}
-	google.maps.event.addDomListener(window, 'load', initialize);
-		// google.maps.event.addDomListener(window, "resize", function() {
-		// 	var center = map.getCenter();
-		// 	google.maps.event.trigger(map, "resize");
-		// 	map.setCenter(center); 
-		// });
-</script>
+	<script type="text/javascript" src="../js/map.js"></script>
+	
+	
 </head>
 <body>
 	<div class="container-fluid">
-	<div class="row ">
-		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 vertical-center no-padding" ></div>
-		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 row text-center no-padding" >
-			<img class="title-logo vertical-center" src="../images/impact_logo.svg" alt="IMPACT">
+		<div class="row ">
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 vertical-center no-padding" ></div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 row text-center no-padding" >
+				<img class="title-logo vertical-center" src="../images/impact_logo.svg" alt="IMPACT">
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 vertical-center no-padding" ></div>
 		</div>
-		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 vertical-center no-padding" ></div>
 	</div>
-</div>
 	<div class="map-container">
 		<div  id="map-canvas"></div>
 	</div>

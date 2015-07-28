@@ -1,6 +1,7 @@
 
-html, body, .map-container, #map-canvas { 
+html, body, .map-container, #map { 
 	height: 100%; margin: 0; padding: 0;
+	overflow: hidden;
 }
 
 .map-container {
@@ -18,9 +19,53 @@ html, body, .map-container, #map-canvas {
 	padding: 0;
 }
 
+body{
+	background-color :white;
+}
 
-#map-canvas {
-	/*z-index: -1;*/
+svg {
+	width: 960px;
+	height: 500px;
+	background: #4a8dcb;
+}
+
+svg:active {
+	cursor: move;
+	cursor: -moz-grabbing;
+	cursor: -webkit-grabbing;
+}
+
+.globe {
+	fill: #4a8dcb;
+}
+
+#first_layer path {
+	fill-opacity:1;
+	fill: #222;
+	stroke: #ddd;
+	stroke-width:0.25px;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+#second_layer circle {
+	cursor: pointer;
+	fill-opacity:0.75;
+	fill: white;
+	/*stroke-width:0.1px;*/
+	/*stroke:black;*/
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+
+
+.text {
+	font-weight: 700;
+	fill: #777;
+	stroke: none;
+	stroke-width:0px;
+	font-size: 14px; 
 }
 
 

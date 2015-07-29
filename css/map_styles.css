@@ -1,105 +1,33 @@
-
-html, body, .map-container, #map { 
-	height: 100%; margin: 0; padding: 0;
-	overflow: hidden;
+body {
+  overflow: hidden;
 }
 
-.map-container {
-	padding:0vh 5vw;
-	padding-bottom: 25vh; 
-}
-
-.title-logo {
-	margin-top:5vh;
-	margin-bottom:5vh;
-	width:15vw;
-}
-
-.no-padding {
-	padding: 0;
-}
-
-body{
-	background-color :white;
+#map-container {
+  height: 100vh;
+  width: 100vw;
+  background: white;
+  overflow: hidden;
 }
 
 svg {
-	width: 960px;
-	height: 500px;
-	background: #4a8dcb;
+  width: 100vw;
+  height: 100vh;
 }
 
 svg:active {
-	cursor: move;
-	cursor: -moz-grabbing;
-	cursor: -webkit-grabbing;
+  cursor: move;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
 }
 
-.globe {
-	fill: #4a8dcb;
+circle {
+  fill: none;
+  stroke-width: 1.5px;
 }
 
 #first_layer path {
-	fill-opacity:1;
-	fill: #222;
-	stroke: #ddd;
-	stroke-width:0.25px;
-	stroke-linecap: round;
-	stroke-linejoin: round;
+  fill-opacity:0.8;
+  fill: black;
+  stroke: none;
 }
 
-#second_layer circle {
-	cursor: pointer;
-	fill-opacity:0.75;
-	fill: white;
-	/*stroke-width:0.1px;*/
-	/*stroke:black;*/
-	stroke-linecap: round;
-	stroke-linejoin: round;
-}
-
-
-
-.text {
-	font-weight: 700;
-	fill: #777;
-	stroke: none;
-	stroke-width:0px;
-	font-size: 14px; 
-}
-
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px){
-	.title-logo {
-		width:40vw;
-	}
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px){
-	.title-logo {
-		width:30vw;
-	}
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px){
-	.title-logo {
-		width:20vw;
-	}
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px){
-	.title-logo {
-		width:15vw;
-	}
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px){
-	.title-logo {
-		width:15vw;
-	}
-}

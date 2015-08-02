@@ -31,3 +31,9 @@ circle {
   stroke: none;
 }
 
+
+#sql {
+  position: absolute;
+  top: 20px;
+  right: 292px;
+}
